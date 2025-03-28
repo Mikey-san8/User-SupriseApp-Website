@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifter-Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="suprise-container" id="changePanel">
+        <header>
+            <a class="back" href="index.html"><i class="fas fa-arrow-left"></i> </a>
+            <nav>
+                <ul>
+                   <a href="#home">Home</a>
+                   <a href="#place">Places</a>
+                   <a href="#about">About</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1>Happy Mot Mot Bibi ! ❤️</h1>
+                <p>This is a not-so-surprise... but surprise! 🎉</p>
+                <img src="https://media.tenor.com/ejMtbLv7H-gAAAAi/panda-bear-brown-bear.gif"/>
+            </section>
+
+            <section id="place">
+                <h1>Where do you want to go? 🏠🍜🛍️</h1>
+                <p>Other options? Message me instead.</p>
+                <div class="places">
+                    <div class="place-option" onclick="selectPlace('Street Food 🍜')">
+                        <img src="https://gttp.images.tshiftcdn.com/261068/x/0/philippines-street-food-guide-what-to-eat-7.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Street Food">
+                        <label>Street Food 🍜</label>
+                    </div>
+                    <div class="place-option" onclick="selectPlace('Mall 🛍️')">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/62/b5/48/sm-mall-of-asia.jpg?w=900&h=500&s=1" alt="Mall">
+                        <label>Mall 🛍️</label>
+                    </div>
+                    <div class="place-option" onclick="selectPlace('At Home Cooking 🍳')">
+                        <img src="https://images.yummy.ph/yummy/uploads/2019/04/adobongbaboynatuyorecipe2-1.jpg" alt="Home Cooking">
+                        <label>At Home Cooking 🍳</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h1>About</h1>
+                <p>This is gifter web app. Created by yours truly.</p>
+                <img src="https://media.tenor.com/gUiu1zyxfzYAAAAj/bear-kiss-bear-kisses.gif"/>
+            </section>
+        </main>
+
+        <footer>
+            <span>Made with ❤️ by Yours Truly | © 2025 Gifter-Web</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="music-container">
+        <iframe class="music-player" id="player1" width="100%" height="auto" scrolling="no" frameborder="no" 
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ken-ji-8887398/give-me-your-forever&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_playbutton=false&visual=true">
+        </iframe>
+    
+        <iframe class="music-player" id="player2" width="100%" height="auto" scrolling="no" frameborder="no" 
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mikhail-clyde-manginsay/leaves-by-ben-ben-live-unedited&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_playbutton=false&visual=true">
+        </iframe>
+    
+        <iframe class="music-player" id="player3" width="100%" height="auto" scrolling="no" frameborder="no" 
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/user-876082644/nang-dumating-ka-mp3&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_playbutton=false&visual=true">
+        </iframe>
+    </div>
+
+    <div class="heart-falling"></div>
+    <div class="heart-upward"></div>
+
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <h2 id="confirmation">Are you sure you want to go to <span id="placeName"></span>?</h2>
+            <div class="modal-buttons">
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+</body>
+</html>
