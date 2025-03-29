@@ -252,7 +252,7 @@ footer {
     justify-content: space-between;
     padding: 10px 20px;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     border-top: 0.5px solid lightgray;
     background: linear-gradient(to right, white, #7851A9); 
     animation: bgTransition 12s infinite alternate ease-in-out;
@@ -442,7 +442,7 @@ footer span {
     }
 
     footer {
-        font-size: 14px;
+        font-size: 0.8rem;
     }
 }
 
