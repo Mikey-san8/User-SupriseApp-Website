@@ -35,8 +35,8 @@ label, h1 {
 }
 
 dotlottie-player {
-    width: 120%;
-    height: 120%;
+    width: 90%;
+    height: 90%;
     background-color: transparent; 
     padding: 0;
     border: none;
@@ -159,7 +159,7 @@ section {
     text-align: center;
     height: 100%;
     width: 100%;
-    font-size: 50px;
+    font-size: 3rem;
     color: white;
     font-weight: normal;
     overflow: hidden;
@@ -332,25 +332,6 @@ footer span {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes fallDown {
     0% {
         transform: translateY(-10%);
@@ -425,8 +406,7 @@ footer span {
     align-items: center;
 }
 
-/* Mobile Phones */
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
     .container {
         flex-direction: column;
         text-align: center;
@@ -437,15 +417,15 @@ footer span {
     }
 
     .place-option {
-        width: 5%; 
+        width: 33%;
     }
 
     .place-option label {
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     nav ul {
-        gap: 10px;
+        gap: 12px;
         flex-wrap: wrap;
     }
 
@@ -454,11 +434,11 @@ footer span {
     }
 
     section {
-        padding: 10px;
+        padding: 15px;
     }
 
-    section h1,p {
-        font-size: 22px;
+    section h1, p {
+        font-size: 20px;
     }
 
     footer {
@@ -466,25 +446,71 @@ footer span {
     }
 }
 
-/* Tablets & Small Laptops */
-@media (max-width: 1024px) {
-    .places {
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .place {
         flex-wrap: wrap;
     }
 
     .place-option {
-        width: 40%;
+        width: 50%;
+    }
+
+    .place-option label {
+        font-size: 0.8rem;
     }
 
     nav ul {
-        gap: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav ul a {
+        font-size: 1.3rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section h1, p {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
     }
 }
 
-/* Large Screens */
-@media (min-width: 1200px) {
+@media (max-width: 480px) {
     .place-option {
-        width: 25%;
+        width: 100%;
+    }
+
+    .place-option label {
+        font-size: 0.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav ul a {
+        font-size: 1.2rem;
+    }
+
+    section h1, p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
     }
 }
+
 
